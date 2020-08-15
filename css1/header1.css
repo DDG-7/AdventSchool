@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 150px;
+    background-repeat:no-repeat;
+    background: linear-gradient(180deg, #631A86 -15%, rgba(0, 0, 0, 0) 20%), url(../Images/ben.png);
+}
+
+.headerBox1{
+    position:absolute;
+	border-bottom: 130px solid #631A86;
+	border-left: 70px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 770px;
+    top: 300px;
+    left: 290px;
+}
+
+.headerBox1:hover{
+    animation: shake 1s ease-in-out .1s infinite alternate;
+}
+
+@keyframes shake{
+    from{
+        transform: rotate(1deg);
+    }
+    to{
+        transform: rotate(-1deg);
+        transform-origin: right;
+    }
+}
+
+.headerBox1Text{
+    position: absolute;
+    left: 167px;
+    top: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 105px;
+    letter-spacing: 0.20em;
+    text-transform: capitalize;
+    font-feature-settings: 'cpsp' on, 'kern' off;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 17px #000000;
+}
+
+.headerBox2{
+    position:absolute;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+	border-bottom: 95px solid #CA6680;;
+	border-left: 70px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 550px;
+    top: 460px;
+    left: 440px;
+    animation: fadeIn 1.5s ease-in both;
+    opacity: 0;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-20%,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+/*.headerBox2:hover{
+    animation: shake 1s ease-in-out .1s infinite alternate;
+}*/
+
+.headerBox2Text{
+    position: absolute;
+    left: 650px;
+    top: 460px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 105px;
+    text-transform: capitalize;
+    font-feature-settings: 'cpsp' on, 'kern' off;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 17px #000000;
+}
+
+.headerButton{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 535px;
+    left: 955px;
+    background: #D57A66;
+    animation: fadeIn 2.5s ease-in both;
+    opacity: 0;
+}
+
+.headerButton:hover{
+    background:rgb(211, 104, 81);
+    /*transform: scale(1.1);*/
+}
+
+.headerButtonText{
+    position: absolute;
+    left: 28px;
+    top: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    align-items: flex-end;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}

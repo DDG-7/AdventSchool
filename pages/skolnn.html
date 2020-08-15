@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css2/header.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Mi skol
+        </div>
+        <div class="column active">
+            <div class="content">
+                <a href="https://www.google.com/">
+                    <div class="titleTBox">
+                        <div class="titleText">B</div>
+                    </div>
+                    <div class="box">
+                        <div class="boxText">Adventschool Bonam</div>
+                        <p>orem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has survived not
+                            only five centuries, but also the leap into electronic typesetting, remaining 
+                            essentially unchanged.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="bg bg1"></div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <div class="titleTBox">
+                    <div class="titleText">K</div>
+                </div>
+                <div class="box">
+                    <div class="boxText">What is Lorem Ipsum?</div>
+                    <p>orem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy 
+                        text ever since the 1500s, when an unknown printer took a galley
+                         of type and scrambled it to make a type specimen book. It has survived not
+                          only five centuries, but also the leap into electronic typesetting, remaining 
+                          essentially unchanged.
+                    </p>
+                </div>
+            </div>
+            <div class="bg bg2"></div>
+        </div>
+        <div class="column">
+            <div class="content">
+            <div class="titleTBox">
+                <div class="titleText">M</div>
+            </div>
+                <div class="box">
+                    <div class="boxText">What is Lorem Ipsum?</div>
+                    <p>orem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy 
+                        text ever since the 1500s, when an unknown printer took a galley
+                         of type and scrambled it to make a type specimen book. It has survived not
+                          only five centuries, but also the leap into electronic typesetting, remaining 
+                          essentially unchanged.
+                    </p>
+                </div>
+            </div>
+            <div class="bg bg3"></div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <div class="titleTBox">
+                    <div class="titleText">AK</div>
+                </div>
+                <div class="box">
+                    <div class="boxText">What is Lorem Ipsum?</div>
+                    <p>orem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy 
+                        text ever since the 1500s, when an unknown printer took a galley
+                         of type and scrambled it to make a type specimen book. It has survived not
+                          only five centuries, but also the leap into electronic typesetting, remaining 
+                          essentially unchanged.
+                    </p>
+                </div>
+            </div>
+            <div class="bg bg4"></div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+    $(document).on('mouseover', '.column' , function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    });
+    </script>
+</body>
+</html>

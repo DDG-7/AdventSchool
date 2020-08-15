@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+.histoBody{
+    width: 100%;
+    height: 100%;
+}
+
+.histoLogo{
+    position: absolute;
+    width: 200px;
+    height: 320%;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.43)0%,rgba(245, 244, 244, 1)5%);
+}
+
+.lineV{
+    position: absolute;
+    border-right: 1px solid #a7d7f9; 
+    height: 320%;
+    left: 200px;
+}
+
+.histoLogo img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 10px;
+}
+
+.histoLogo h2{
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    font-size: 20px;
+    font-family: Montserrat;
+    letter-spacing: 0.08em;
+}
+
+.histoLogo span{
+    position: absolute;
+    top: 195px;
+    left: 63px;
+    font-family: Montserrat;
+    letter-spacing: 0.08em;
+}
+
+.histTitle{
+    position: relative;
+    width: 83%;
+    top: 110px;
+    left: 220px;
+}
+
+
+.histTitle h2{
+    font-family: Montserrat;
+    font-size: 35px;
+    letter-spacing: 0.08em;
+}
+
+.histTitle hr{
+    position: relative;
+    top: -25px;
+}
+
+.textBody{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 15%;
+    top: 30%;
+}
+
+.adventist p{
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+.adventschoolCur h3{
+    font-family: Montserrat;
+    font-size: 14;
+    font-weight: 500;
+}
+
+.adventschoolCur p{
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+
+
+.adventschoolCur hr{
+    position: relative;
+    top: -10px;
+}
+
+.histInfo2{
+    position: absolute;
+    width: 300px;
+    height: 50%;
+    background: #fafafa;
+    left: 77%;
+    top: 45%;
+    border: 1px solid #727272;
+}
+
+.histInfo2 h3{
+    position: relative;
+    top: -5px;
+    left: 58px;
+    font-family: montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    width: 200px;
+}
+
+.histInfo2 img{
+    position: relative;
+    left:50px ;
+}
+
+.histInfo2 h5{
+    position: relative;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    left: 55px;
+}
+
+.histInfoText{
+    position: relative;
+    top: -10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.column{
+    float: left;
+    width: 40%;
+    height: 50%;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h5{
+    position: relative;
+    left: 10px;
+    top: 0;
+}
+
+.col1{
+    position: relative;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    left: 10px;
+}
+
+.col11{
+    position: relative;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    left: 10px;
+    top: 10px;
+}
+
+.col2{
+    position: relative;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    top: -2px;
+}
+
+.col22{
+    position: relative;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    top: 6px;
+}
+
+.hrImg .hendryImage { 
+    position:relative;
+}
+.hrImg .hendryImage span {
+    position:absolute; left:-9999px; top:-9999px; z-index:9999;
+}
+.hrImg:hover .hendryImage span { 
+    top: 20px; 
+    left:0;
+}
+
+.funshon{
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.4em;
+}

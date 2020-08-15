@@ -1,0 +1,227 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+.media{
+    position: absolute;
+    width: 100%;
+    height: 540px;
+    top: 3900px;
+    left: 0px;
+}
+.mediaText{
+    position: relative;
+    text-align: center;
+    bottom: 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #631a86;
+    letter-spacing: 0.1em;
+  }
+
+  .mediaLine{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #631a86;
+    top:-28px;
+  }
+
+  .mediaText span:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: black;
+    animation: spanBorder 1.5s linear infinite;
+  }
+  
+  .mediaText span{
+    position: relative;
+    display: inline-block;
+    animation: animate 1.5s linear infinite;
+  }
+  
+
+  .mediaText span:nth-child(1),
+  .mediaText span:nth-child(1):before{
+    animation-delay: 0s;
+  }
+  .mediaText span:nth-child(2),
+  .mediaText span:nth-child(2):before{
+    animation-delay: 0.2s;
+  }
+
+  .mediaText span:nth-child(3),
+  .mediaText span:nth-child(3):before{
+    animation-delay: 0.4s;
+  }
+
+  .mediaText span:nth-child(4),
+  .mediaText span:nth-child(4):before{
+    animation-delay: 0.6s;
+  }
+
+  .mediaText span:nth-child(5),
+  .mediaText span:nth-child(5):before{
+    animation-delay: 0.8s;
+  }
+
+  .mediaText span:nth-child(6),
+  .mediaText span:nth-child(6):before{
+    animation-delay: 1s;
+  }
+
+  .mediaText span:nth-child(7),
+  .mediaText span:nth-child(7):before{
+    animation-delay: 1.2s;
+  }
+
+  .mediaText span:nth-child(8),
+  .mediaText span:nth-child(8):before{
+    animation-delay: 1.4s;
+  }
+
+   
+  @keyframes animate{
+    0%{
+      transform: translateY(0px);
+    }
+    10%{
+      transform: translateY(-30px);
+    }
+    15%{
+      transform: translateY(0px);
+    }
+    25%{
+      transform: translateY(-20px);
+    }
+    30%{
+      transform: translateY(-20px);
+    }
+    40%{
+      transform: translateY(-10px);
+    }
+    45%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
+
+  @keyframes spanBorder{
+    0%{
+      bottom: 0;
+      height: 3px;
+    }
+    10%{
+      bottom: -30px;
+      height: 33px;
+      background: #631a86;
+    }
+    15%{
+      bottom: 0;
+      height: 3px;
+    }
+    25%{
+      bottom: -20px;
+      height: 23px;
+    }
+    30%{
+      bottom: 0;
+      height: 4px;
+    }
+    40%{
+      bottom: -10px;
+      height: 13px;
+    }
+    45%{
+      bottom: 0;
+      height: 3px;
+    }
+    100%{
+      bottom: 0;
+      height: 3px;
+    }
+  }
+
+
+  .container-all{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -28px;
+    left: 0px;
+    margin-left: 7px;
+  }
+  .container{
+    width: calc(33% - 0px);
+    overflow:hidden;
+    height: fit-content;
+    padding: 0;
+    position:relative;
+    float:left;
+  }
+  img{
+    width: 100%;
+    transition-duration: .3s;
+    max-width: 100%;
+    display:block;
+    overflow:hidden;
+    cursor:pointer;
+  }
+  .title{
+    position:absolute;
+    display:block;
+    font-family: Montserrat;
+    cursor:pointer;
+    top: 35%;
+    display: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+  }
+  .text{
+    position:absolute;
+    top: 69%;
+    cursor:pointer;
+    max-width: 80%;
+    font-family: Montserrat;
+    text-align:center;
+    left: 50%;
+    text-shadow: 1px 5px 10px black;
+    font-size: 1em;
+    display:none;
+    margin-right: -50%;
+    transition-duration: .3s;
+    transform: translate(-50%, -50%) 
+  }
+  .container:hover img{
+    transform: scale(1.1);
+    transition-duration: .3s;
+    filter: grayscale(50%);
+    opacity: .7;
+  }
+  .container:hover span{
+    color:white;
+    display: block;
+    transition-duration: .3s;
+  }
+  @media only screen and (max-width: 900px) {
+      .container {
+          width: calc(50% - 6px);
+      }
+  }
+  @media only screen and (max-width: 400px) {
+      .container {
+          width: 100%;
+      }
+  }

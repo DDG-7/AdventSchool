@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+.mishonV{
+    position:absolute;
+    width: 100%;
+    top: 1400px;
+    height: 720px;
+    left: 1px;
+}
+
+.mishonCir{
+    position: absolute;
+    top: 130px;
+    left: 300px;
+    width: 150px;
+    height: 150px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 4px 4px 7px rgba(99, 26, 134, 0.3);
+    z-index: 2;
+}
+
+.mishonCir[data-scroll='in']{
+    animation: slideIn .7s ease-in;
+}
+
+.mishonCir:hover{
+    transform: scale(1.1);
+}
+
+.mishonCir1{
+    position: absolute;
+    top: 260px;
+    left: 247px;   
+    width: 150px;
+    height: 150px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 4px 4px 7px #CA6680;;
+    z-index: 2;
+}
+
+.mishonCir1[data-scroll='in']{
+    animation: slideIn .8s ease-in;
+}
+
+.mishonCir1:hover{
+    transform: scale(1.1);
+}
+
+.mishonCir2{
+    position: absolute;
+    top: 390px;
+    left: 300px;
+    width: 150px;
+    height: 150px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 4px 4px 7px #C45AB3;;
+    z-index: 1;
+}
+
+.mishonCir2[data-scroll='in']{
+    animation: slideIn .9s ease-in;
+}
+
+.mishonCir2:hover{
+    transform: scale(1.1);
+}
+
+.mishonCircText{
+    position: absolute;
+    top: 30px;
+    left: 48px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: #631A86;
+}
+
+.mishonCircText1{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: #CA6680;;
+}
+
+.mishonCircText2{
+    position: absolute;
+    top: 33px;
+    left: 48px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: #C45AB3;;
+}
+
+
+.misChiki1{
+    position: absolute;
+    top: 75px;
+    left: 131px;
+    width: 13px;
+    height: 13px;
+    background: #631A86;
+    border-radius: 50%;
+}
+
+.misChiki2{
+    position: absolute;
+    top: 75px;
+    left: 131px;
+    width: 13px;
+    height: 13px;
+    background: #CA6680;
+    border-radius: 50%;
+}
+
+.misChiki3{
+    position: absolute;
+    top: 75px;
+    left: 131px;
+    width: 13px;
+    height: 13px;
+    background: #C45AB3;
+    border-radius: 50%;
+}
+
+.mishonCirRec{
+    position: absolute;
+    top: 185px;
+    left: 420px;
+    width: 890px;
+    height: 50px;
+    background: #631A86;
+    z-index: 1;
+}
+
+.mishonCirRec1{
+    position: absolute;
+    top: 315px;
+    left: 380px;
+    width: 890px;
+    height: 50px;
+    background: #CA6680;;
+}
+
+.mishonCirRec2{
+    position: absolute;
+    top: 445px;
+    left: 420px;
+    width: 890px;
+    height:50px;
+    background: #C45AB3;;
+}
+
+.mishonCirRecText{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    top: 15px;
+    left: 38px;
+    font-family: Montserrat;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.mishonCirRecText[data-scroll='in']{
+    animation: typing 4s steps(22, end) forwards, blink 1s infinite;
+}
+
+.mishonCirRecText1{
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    top: 15px;
+    left: 26px;
+    font-family: Montserrat;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.mishonCirRecText1[data-scroll='in']{
+    animation: typing 4s steps(22, end) forwards, blink 1s infinite;
+}
+
+
+.mishonCirRecText2{
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    top: 15px;
+    left: 38px;
+    font-family: Montserrat;
+    font-size: 21px;
+    color: #FFFFFF;
+}
+
+.mishonCirRecText2[data-scroll='in']{
+    animation: typing 4s steps(22, end) forwards, blink 1s infinite;
+}
+
+
+@keyframes slideIn {
+    0%{
+        transform: skewX(25deg) translateX(-500px);
+    }
+    75%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: skew(0);
+    }
+}
+
+@keyframes typing{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 78%;
+    }
+}
+
+@keyframes blink{
+    0%{
+        border-right: 2px solid transparent;
+    }
+    100%{
+        border-right: 2px solid rgb(255, 255, 255);
+    }
+}

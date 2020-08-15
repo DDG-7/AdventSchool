@@ -1,0 +1,87 @@
+.optionB{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    left: 0px;
+    top: 2605px;
+    background: #1A1B41;
+    z-index: 1;
+}
+
+.optionRow{
+    position: absolute;
+    top: 190px;
+    left: 120px;
+    width: 1500px;
+}
+
+.column {
+    float: left;
+    width: 23%;
+}
+
+.optionImgSize{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.optionImgSize:hover{
+    transform: scale(1.1);
+}
+
+.optionText{
+    position: absolute;
+    top: 80px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.optionText[data-scroll='in']{
+    animation: slideUp 1s ease-in-out;
+}
+
+.optionText2{
+    position: relative;
+    top: 110px;
+    width: 263px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.optionText2[data-scroll='in']{
+    animation: slideUp 1.3s ease-in-out;
+}
+
+.optionLink{
+    position: absolute;
+    top: 220px;
+    font-family: Montserrat;
+    font-size: 15px;
+    color: #F1FF6E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.optionLink[data-scroll='in']{
+    animation: slideUp 1.6s ease-in-out;
+}
+
+.optionLink:hover{
+    color: rgb(98, 104, 45);
+}
+
+@keyframes slideUp{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

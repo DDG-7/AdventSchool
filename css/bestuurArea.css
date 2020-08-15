@@ -1,0 +1,257 @@
+.bestuurB{
+    position: absolute;
+    width: 95%;
+    height: 400px;
+    left: 47px;
+    top: 1380px;
+    background: #F1FF6E;
+}
+
+.bestuurBText{
+    position: relative;
+    width: 500px;
+    height: 70px;
+    left: 50px;
+    top: 180px;
+    background: #30314F;
+    z-index: 0;
+}
+
+.bestuurBText[data-scroll='in']{
+  animation: slideLeft 1s ease-in;
+}
+
+.bestuurText{
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 38px;
+    color: #FFFFFF;
+    letter-spacing: 0.08em;
+}
+
+.bestuurBText2{
+    position: absolute;
+    width: 220px;
+    height: 35px;
+    left: 330px;
+    top: 240px;
+    background: #FFFFFF;
+    z-index: 1;
+}
+
+.bestuurBText2[data-scroll='in']{
+  animation: slideLeft 2s ease-in;
+}
+
+.bestuurText2{
+    position: relative;
+    left: 20px;
+    top: 8px;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #494949;
+    letter-spacing: 0.08em;
+}
+
+.bestuurImg{
+    position: absolute;
+    width: 750px;
+    height: 480px;
+    left: 700px;
+    top: 1330px;
+    background-image: url(../Images/bestuur.png);
+}
+
+.bestuurText3{
+    position: absolute;
+    left: 100px;
+    top: 130px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 37px;
+    color: #FFFFFF;
+}
+
+.bestuurTextP{
+    position: absolute;
+    left: 100px;
+    top: 220px;
+    width: 570px;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.bestuurButton{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 550px;
+    top: 400px;
+    background: #C2E7DA;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.bestuurBT{
+    position: absolute;
+    left: 35px;
+    top: 8px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 22px;
+    color: #272727;
+    cursor: pointer;
+}
+
+@keyframes slideLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 60%;
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+  
+  .modal-header h2{
+    position: relative;
+    left: 36%;
+    margin: 0px;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-weight: 400;
+    padding: 10px;
+    width: 180px;
+  }
+  
+  .modal-header {
+    position: relative;
+    background: #30314F;
+    padding: 0px;
+    color: #fff;
+    width: 90%;
+    left: 50px;
+    top: 25px;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-header:hover{
+    background:#25264d;
+  }
+
+
+  .modal-title{
+    position: relative;
+    left: 250px;
+    font-family: Montserrat;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    width: 350px;
+    top: 20px;
+  }
+
+  .modal-text{
+    position: relative;
+    left: 60px;
+    width: 750px;
+    font-family: Montserrat;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  
+  .modal-body {
+    padding: 50px 20px;
+    background: #fff;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    color: #ccc;
+    float: left;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    left: 95%;
+    top: 5px;
+  }
+  
+  .closeBtn:hover {
+    color: rgb(50, 70, 161);
+    text-decoration: none;
+  }
+
+  .bolModel{
+      position: relative;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #ffff;
+      top:38px;
+      left: 335px;
+  }
+
+  .bolModel:hover{
+    background-color: #d57a66;
+  }
+
+  .bolModel1{
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffff;
+    top: 30px;
+    left: 560px;
+}
+
+.bolModel1:hover{
+    background-color: #d57a66;
+  }
+
+.imageModal{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 55px;
+}
+
+.imageModal:hover{
+    animation: shake1 .1s ease-in-out .1s infinite alternate;
+}
+  
+  @keyframes modalopen {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

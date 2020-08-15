@@ -1,0 +1,286 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+.regla{
+    position: absolute;
+    width: 100%;
+    top: 1950px;
+}
+
+.reglaB{
+    position: absolute;
+    width: 95%;
+    height: 430px;
+    left: 40px;
+    top: 153px;
+    background: #CA6680;
+}
+
+.reglaBText{
+    position: absolute;
+    width: 545px;
+    height: 70px;
+    left: 70px;
+    top: 200px;
+    background: #FFFFFF;
+}
+
+.reglaText{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 25px;
+    color: #0a0a0a;
+    letter-spacing: 0.3em;
+    animation: fadeIn 2s;
+}
+
+.reglaBText2{
+    position: absolute;
+    width: 250px;
+    height: 39px;
+    left: 350px;
+    top: 263px;
+    background: #631A86;
+    animation: shake 1s ease-in-out .1s infinite alternate;
+}
+
+.reglaText2{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.08em;
+}
+
+@keyframes shake{
+    from{
+        transform: rotate(1deg);
+        transform-origin: right;
+    }
+    to{
+        transform: rotate(-1deg);
+        transform-origin: left;
+    }
+}
+
+.reglaImg{
+    position: absolute;
+    width: 710px;
+    height: 500px;
+    left: 730px;
+    top: 110px;
+    background-image: url(../Images/regla.png);
+}
+
+.reglaText3{
+    position: absolute;
+    left: 90px;
+    top: 130px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    animation: fadeIn 2s;
+}
+
+.reglaTextP{
+    position: absolute;
+    left: 90px;
+    top: 230px;
+    width: 550px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    animation: fadeIn 2s;
+}
+
+.reglaButton{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 520px;
+    top: 430px;
+    background: #d57a66;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.reglaButton:hover{
+    transform: scale(1.1);
+}
+
+.reglaBT{
+    position: absolute;
+    left:38px;
+    top: 8px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #FFFFFF;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+:root {
+    --modal-duration: 1s;
+    --modal-color: rgb(153, 77, 97);
+  }
+  
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header h2{
+    position: relative;
+    left: 365px;
+    margin: 0px;
+    font-size: 27px;
+    padding: 10px;
+    width: 180px;
+  }
+  
+  .modal-header {
+    background: rgb(155, 57, 83);
+    padding: 0px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .modal-header:hover{
+    background:rgb(151, 72, 93);
+  }
+
+
+  .modal-title{
+    position: relative;
+    left: 60px;
+    font-family: Montserrat;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    width: 150px;
+  }
+
+  .modal-text{
+    position: relative;
+    left: 60px;
+    width: 750px;
+    font-family: Montserrat;
+    padding: 5px;
+    font-size: 18px;
+  }
+  
+  .modal-body {
+    padding: 0px 20px;
+    background: #fff;
+  }
+  
+  .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    color: #ccc;
+    float: left;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    left: 78%;
+  }
+  
+  .closeBtn:hover {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .bolModel{
+      position: relative;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #ffff;
+      top:38px;
+      left: 335px;
+  }
+
+  .bolModel:hover{
+    background-color: #d57a66;
+  }
+
+  .bolModel1{
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffff;
+    top: 30px;
+    left: 560px;
+}
+
+.bolModel1:hover{
+    background-color: #d57a66;
+  }
+  
+  @keyframes modalopen {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shake1{
+      from{
+          transform: rotate(10deg);
+      }
+      to{
+          transform: rotate(-10deg);
+          transform-origin: center;
+      }
+  }
+  
